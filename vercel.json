@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/sistema-ltg",
+      "destination": "/sistema-ltg.html"
+    },
+    {
+      "source": "/:path((?!.*\\.).*)",
+      "destination": "/:path.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}

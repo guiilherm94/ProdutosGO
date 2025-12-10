@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema LTG - Lucrando ou Trabalhando de Graça?</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font Awesome (Para o ícone do Windows) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse-urgency {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        .animate-pulse-urgency {
+            animation: pulse-urgency 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <!-- SEÇÃO 1: HERO -->
+    <header class="relative overflow-hidden bg-slate-950 pt-12 pb-20 px-6">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/20 rounded-full blur-3xl animate-pulse-glow"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse-glow" style="animation-delay: 1.5s;"></div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
+
+        <div class="container mx-auto max-w-4xl text-center relative z-10">
+            
+            <!-- Tagline -->
+            <div class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 animate-pulse">
+                ⚠️ PARE DE PERDER DINHEIRO HOJE
+            </div>
+            
+            <!-- Headline -->
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight text-white">
+                VOCÊ ESTÁ <span class="text-emerald-400">LUCRANDO DE VERDADE</span>...<br>
+                OU SÓ ESTÁ <span class="text-red-500">PAGANDO PARA TRABALHAR?</span>
+            </h1>
+
+            <!-- IMAGEM DESTAQUE DO SISTEMA (Header) -->
+            <!-- Substituí o Vídeo por Imagem conforme solicitado -->
+            <div class="relative w-full max-w-4xl mx-auto mb-6 transform hover:scale-105 transition duration-500 animate-float">
+                <div class="rounded-xl shadow-2xl border-4 border-slate-700 overflow-hidden bg-slate-800">
+                    
+                    <!-- 👇👇 COLE O LINK DA IMAGEM PRINCIPAL AQUI (Ex: Tela do Dashboard) 👇👇 -->
+                    <img 
+                        src="https://placehold.co/800x450/1e293b/34d399?text=FOTO+DO+SISTEMA+NO+MONITOR" 
+                        alt="Interface do Sistema LTG no Windows" 
+                        class="w-full h-auto object-cover"
+                    >
+
+                </div>
+                <!-- Efeito de brilho atrás -->
+                <div class="absolute -inset-1 bg-emerald-500/20 blur-xl -z-10 rounded-[2rem]"></div>
+            </div>
+
+            <!-- IDENTIFICAÇÃO DO SISTEMA (Novo Bloco) -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-10 opacity-90">
+                <!-- Ícone + Nome -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-700 to-slate-900 shadow-inner flex items-center justify-center border border-slate-600">
+                        <i data-lucide="calculator" class="w-5 h-5 text-emerald-400"></i>
+                    </div>
+                    <span class="text-white font-bold text-lg tracking-wide">Sistema LTG</span>
+                </div>
+                
+                <!-- Divisor (apenas desktop) -->
+                <div class="hidden md:block w-px h-6 bg-slate-700"></div>
+
+                <!-- Selo Windows -->
+                <div class="flex items-center gap-2 bg-slate-800/50 px-3 py-1.5 rounded-full border border-slate-700/50">
+                    <i class="fab fa-windows text-blue-400 text-lg"></i>
+                    <span class="text-slate-300 text-sm font-medium">Exclusivo para Windows</span>
+                </div>
+            </div>
+            
+            <!-- Subheadline -->
+            <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                Descubra em 5 minutos a resposta que tira o seu sono. O <strong>Sistema LTG</strong> é a única ferramenta que calcula seu Custo Real, seu Preço Ideal e diz exatamente se você deve vender ou parar — <strong>sem planilhas, sem matemática e sem mensalidade.</strong>
+            </p>
+
+            <!-- CTA -->
+            <a href="#solucao" class="group inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white text-xl md:text-2xl font-bold py-4 px-8 rounded-xl shadow-lg transform transition hover:-translate-y-1 w-full md:w-auto animate-pulse-urgency">
+                QUERO DESCOBRIR A VERDADE AGORA <i data-lucide="arrow-right" class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <span class="text-slate-400 text-sm font-normal block mt-2">(Clique para parar de perder dinheiro)</span>
+        </div>
+    </header>
+
+    <!-- SEÇÃO 2: DOR E SOLUÇÃO -->
+    <section id="solucao" class="py-16 px-6 bg-white scroll-mt-10">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-2 leading-tight">
+                    CHEGA DE "ACHAR".<br>
+                    <span class="text-emerald-600">O SISTEMA LTG É A SOLUÇÃO GARANTIDA...</span>
+                </h2>
+                
+                <p class="text-xl md:text-2xl text-slate-600 font-bold mt-4">
+                    Para você que quer...
+                </p>
+            </div>
+
+            <!-- Grid de Desejos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500 transition group">
+                    <i data-lucide="moon" class="w-10 h-10 text-emerald-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg mb-2 text-slate-900">Dormir Tranquilo</h3>
+                    <p class="text-slate-600 text-sm">Saber que cada venda colocou dinheiro no bolso, e não dívida.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500 transition group">
+                    <i data-lucide="banknote" class="w-10 h-10 text-emerald-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg mb-2 text-slate-900">Ganhar Dinheiro</h3>
+                    <p class="text-slate-600 text-sm">Parar de ser o "funcionário mais barato" da própria empresa.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500 transition group">
+                    <i data-lucide="trending-up" class="w-10 h-10 text-emerald-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg mb-2 text-slate-900">Vencer a Concorrência</h3>
+                    <p class="text-slate-600 text-sm">Saber se o vizinho vende barato porque é esperto ou porque está quebrando.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500 transition group">
+                    <i data-lucide="calculator" class="w-10 h-10 text-emerald-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg mb-2 text-slate-900">Fim das Contas</h3>
+                    <p class="text-slate-600 text-sm">Deixar o robô fazer a matemática chata por você.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500 transition group">
+                    <i data-lucide="tag" class="w-10 h-10 text-emerald-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg mb-2 text-slate-900">Preço Justo</h3>
+                    <p class="text-slate-600 text-sm">Cobrar o valor certo sem medo de perder o cliente.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500 transition group">
+                    <i data-lucide="eye" class="w-10 h-10 text-emerald-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-lg mb-2 text-slate-900">Verdade no Extrato</h3>
+                    <p class="text-slate-600 text-sm">Olhar para a conta bancária e ver o lucro aparecer de verdade.</p>
+                </div>
+            </div>
+
+            <!-- Quebra de Objeções -->
+            <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-center mb-10 flex items-center justify-center gap-2">
+                        🚫 ISSO IMPEDE VOCÊ DE CRESCER? NÃO MAIS.
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-red-500 mb-3 flex justify-center"><i data-lucide="x-circle" class="w-10 h-10"></i></div>
+                            <h4 class="font-bold mb-2 text-lg">"Sou péssimo em matemática"</h4>
+                            <p class="text-slate-300 text-sm">O sistema calcula tudo sozinho. Você só preenche os campos.</p>
+                        </div>
+                        <div>
+                            <div class="text-red-500 mb-3 flex justify-center"><i data-lucide="clock" class="w-10 h-10"></i></div>
+                            <h4 class="font-bold mb-2 text-lg">"Não tenho tempo"</h4>
+                            <p class="text-slate-300 text-sm">Instalação em 2 minutos. Resultado em 5 minutos.</p>
+                        </div>
+                        <div>
+                            <div class="text-red-500 mb-3 flex justify-center"><i data-lucide="laptop" class="w-10 h-10"></i></div>
+                            <h4 class="font-bold mb-2 text-lg">"Medo de computador"</h4>
+                            <p class="text-slate-300 text-sm">Se você sabe enviar um e-mail, você sabe usar o LTG.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: DEMONSTRAÇÃO E VANTAGEM WINDOWS -->
+    <section class="py-16 px-6 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto max-w-6xl">
+            
+            <h3 class="text-2xl md:text-4xl font-black text-center mb-4 text-slate-900">VEJA O SISTEMA TRABALHANDO POR VOCÊ</h3>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Não é mágica, é tecnologia. Veja exatamente o que você vai encontrar assim que instalar:</p>
+            
+            <!-- GALERIA DE IMAGENS -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <!-- 📸 IMAGEM 1: Foco no Lucro Real -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 hover:border-emerald-500 transition duration-300 flex flex-col">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
+                        <!-- 👇👇 RECOMENDAÇÃO 1: PRINT DO DASHBOARD (Mostrando Lucro Verde) 👇👇 -->
+                        <img 
+                            src="https://placehold.co/600x400/022c22/34d399?text=PRINT+DO+DASHBOARD" 
+                            alt="Dashboard mostrando Lucro Real" 
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="font-bold text-emerald-700 mb-2 flex items-center gap-2 text-lg">
+                            <i data-lucide="check-circle-2" class="w-5 h-5"></i> O Fim da Dúvida
+                        </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Chega de misturar faturamento com lucro. O painel mostra em <strong>VERDE VIBRANTE</strong> quanto realmente sobrou no seu bolso para gastar, reinvestir ou guardar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 📸 IMAGEM 2: Precificação -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 hover:border-emerald-500 transition duration-300 flex flex-col">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
+                        <!-- 👇👇 RECOMENDAÇÃO 2: TELA DE CADASTRO (Mostrando Custo x Venda) 👇👇 -->
+                        <img 
+                            src="https://placehold.co/600x400/1e3a8a/60a5fa?text=TELA+DE+PRECIFICACAO" 
+                            alt="Tela de cadastro de produto" 
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="font-bold text-emerald-700 mb-2 flex items-center gap-2 text-lg">
+                            <i data-lucide="wand-2" class="w-5 h-5"></i> Preço Automático
+                        </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            O sistema inclui luz, água, taxas de cartão e impostos no preço de cada produto automaticamente. <strong>Nunca mais pague para trabalhar</strong> por esquecer um custo "invisível".
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 📸 IMAGEM 3: Concorrência -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 hover:border-emerald-500 transition duration-300 flex flex-col">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center overflow-hidden">
+                        <!-- 👇👇 RECOMENDAÇÃO 3: LISTA DE PRODUTOS (Mostrando Organização) 👇👇 -->
+                        <img 
+                            src="https://placehold.co/600x400/451a03/fbbf24?text=RELATORIO+DE+VENDAS" 
+                            alt="Relatório de produtos" 
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h4 class="font-bold text-emerald-700 mb-2 flex items-center gap-2 text-lg">
+                            <i data-lucide="crosshair" class="w-5 h-5"></i> Raio-X do Seu Negócio
+                        </h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Descubra se seu preço está competitivo ou se você está perdendo vendas por cobrar caro demais (ou quebrando por cobrar barato demais). <strong>Tenha certeza em cada venda.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOCO DE VANTAGEM TÉCNICA -->
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border-l-8 border-blue-600">
+                <div class="flex flex-col md:flex-row gap-10 items-center">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-black text-slate-900 mb-4 flex items-center gap-3">
+                            <span class="text-blue-600 text-4xl"><i class="fab fa-windows"></i></span>
+                            POR QUE SOFTWARE PARA WINDOWS?
+                        </h3>
+                        <p class="text-slate-600 mb-6 text-sm md:text-base leading-relaxed">
+                            O Sistema LTG é um programa robusto para instalar direto no seu PC. Isso não é um detalhe técnico, é sua <strong>segurança</strong>.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 text-sm">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-emerald-500 shrink-0"></i>
+                                <span class="text-slate-700"><strong>Mais Seguro que Excel:</strong> Planilhas quebram, perdem fórmulas e qualquer um apaga. O LTG é blindado.</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <i data-lucide="zap" class="w-6 h-6 text-emerald-500 shrink-0"></i>
+                                <span class="text-slate-700"><strong>Mais Rápido que Sistemas Online:</strong> Não trava se a internet cair. Seus dados estão no SEU computador, não na nuvem de estranhos.</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-sm">
+                                <i data-lucide="wallet" class="w-6 h-6 text-emerald-500 shrink-0"></i>
+                                <span class="text-slate-700"><strong>Sem Mensalidade Eterna:</strong> Sistemas online te alugam o software. O LTG é seu.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 text-center bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                        <div class="text-blue-600 mb-4 flex justify-center"><i data-lucide="download" class="w-16 h-16"></i></div>
+                        <div class="font-bold text-slate-800 text-lg">Instalação Simples</div>
+                        <div class="text-xs text-slate-500 mt-1">Compatível com Windows 10 e 11</div>
+                        <div class="text-xs text-emerald-600 font-bold mt-2 uppercase">Leve e Rápido</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: PARA QUEM É -->
+    <section class="py-16 px-6 bg-white border-b border-slate-100">
+        <div class="container mx-auto max-w-6xl text-center">
+            <h2 class="text-3xl font-black mb-2 text-slate-900">FUNCIONA PARA O MEU NEGÓCIO?</h2>
+            <p class="text-xl text-slate-600 mb-10">Se você vende produtos ou serviços, a resposta é <span class="text-emerald-600 font-bold">SIM</span>.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="p-6 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100 flex flex-col items-center justify-center gap-3">
+                    <i data-lucide="coffee" class="w-8 h-8 text-slate-700"></i>
+                    <div class="text-sm font-bold text-slate-800">Lanchonetes</div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100 flex flex-col items-center justify-center gap-3">
+                    <i data-lucide="shirt" class="w-8 h-8 text-slate-700"></i>
+                    <div class="text-sm font-bold text-slate-800">Roupas</div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100 flex flex-col items-center justify-center gap-3">
+                    <i data-lucide="cake" class="w-8 h-8 text-slate-700"></i>
+                    <div class="text-sm font-bold text-slate-800">Confeitaria</div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100 flex flex-col items-center justify-center gap-3">
+                    <i data-lucide="sparkles" class="w-8 h-8 text-slate-700"></i>
+                    <div class="text-sm font-bold text-slate-800">Cosméticos</div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100 flex flex-col items-center justify-center gap-3">
+                    <i data-lucide="palette" class="w-8 h-8 text-slate-700"></i>
+                    <div class="text-sm font-bold text-slate-800">Artesanato</div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 hover:bg-emerald-50 transition border border-slate-100 flex flex-col items-center justify-center gap-3">
+                    <i data-lucide="shopping-bag" class="w-8 h-8 text-slate-700"></i>
+                    <div class="text-sm font-bold text-slate-800">E-commerce</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: ANCORAGEM DE VALOR (OFERTA) - RESTAURADA -->
+    <section class="py-20 px-6 bg-slate-900 text-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-black text-center mb-12 text-yellow-400">VEJA TUDO O QUE VOCÊ LEVA NO PLANO COMPLETO HOJE:</h2>
+
+            <div class="space-y-6">
+                <!-- Card 1 -->
+                <div class="flex flex-col md:flex-row items-center bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <div class="text-emerald-400 mr-0 md:mr-6 mb-4 md:mb-0 p-3 bg-slate-900 rounded-lg"><i data-lucide="monitor" class="w-8 h-8"></i></div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-xl font-bold">Módulo Precificação & Lucro Real</h3>
+                        <p class="text-slate-400 text-sm mt-1">Descubra se está lucrando ou pagando para trabalhar.</p>
+                    </div>
+                    <div class="text-right mt-4 md:mt-0 bg-slate-900/50 p-3 rounded-lg min-w-[140px]">
+                        <div class="text-slate-500 line-through text-sm">De: R$ 97,00</div>
+                        <div class="text-emerald-400 font-bold text-lg">Por: INCLUSO</div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col md:flex-row items-center bg-slate-800 p-6 rounded-xl border border-emerald-900 shadow-[0_0_15px_rgba(16,185,129,0.15)] relative overflow-hidden">
+                    <div class="text-yellow-400 mr-0 md:mr-6 mb-4 md:mb-0 p-3 bg-slate-900 rounded-lg"><i data-lucide="package" class="w-8 h-8"></i></div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-yellow-400">BÔNUS: Módulo Estoque Inteligente</h3>
+                        <p class="text-slate-400 text-sm mt-1">Gestão de matéria-prima com alerta automático. Nunca mais pare a produção.</p>
+                    </div>
+                    <div class="text-right mt-4 md:mt-0 bg-slate-900/50 p-3 rounded-lg min-w-[140px]">
+                        <div class="text-slate-500 line-through text-sm">De: R$ 47,00</div>
+                        <div class="bg-emerald-600 text-white px-3 py-1 rounded text-sm font-bold inline-block">GRÁTIS HOJE</div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col md:flex-row items-center bg-slate-800 p-6 rounded-xl border border-emerald-900 shadow-[0_0_15px_rgba(16,185,129,0.15)] relative overflow-hidden">
+                    <div class="text-yellow-400 mr-0 md:mr-6 mb-4 md:mb-0 p-3 bg-slate-900 rounded-lg"><i data-lucide="pie-chart" class="w-8 h-8"></i></div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-yellow-400">BÔNUS: Módulo Finanças & Dashboard</h3>
+                        <p class="text-slate-400 text-sm mt-1">Painel executivo com gráficos de faturamento e ponto de equilíbrio.</p>
+                    </div>
+                    <div class="text-right mt-4 md:mt-0 bg-slate-900/50 p-3 rounded-lg min-w-[140px]">
+                        <div class="text-slate-500 line-through text-sm">De: R$ 47,00</div>
+                        <div class="bg-emerald-600 text-white px-3 py-1 rounded text-sm font-bold inline-block">GRÁTIS HOJE</div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flex flex-col md:flex-row items-center bg-slate-800 p-6 rounded-xl border border-emerald-900 shadow-[0_0_15px_rgba(16,185,129,0.15)] relative overflow-hidden">
+                    <div class="text-yellow-400 mr-0 md:mr-6 mb-4 md:mb-0 p-3 bg-slate-900 rounded-lg"><i data-lucide="trophy" class="w-8 h-8"></i></div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-yellow-400">BÔNUS: Módulo Vendas & Ranking</h3>
+                        <p class="text-slate-400 text-sm mt-1">Relatório "Top 10" para saber quais produtos demitir e quais promover.</p>
+                    </div>
+                    <div class="text-right mt-4 md:mt-0 bg-slate-900/50 p-3 rounded-lg min-w-[140px]">
+                        <div class="text-slate-500 line-through text-sm">De: R$ 47,00</div>
+                        <div class="bg-emerald-600 text-white px-3 py-1 rounded text-sm font-bold inline-block">GRÁTIS HOJE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 6: PROVA SOCIAL -->
+    <section class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-black text-center mb-12 text-slate-900">QUEM USOU, <span class="text-red-600 line-through decoration-2">PAROU DE SANGRAR</span> DINHEIRO</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Depoimento 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-amber-400 mb-4 flex gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">"Misericórdia, eu achava que lucrava 10 reais na peça, o sistema mostrou que eu tava perdendo 2 reais por causa da taxa do cartão. Salvou minha loja!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">MC</div>
+                        <div class="ml-3">
+                            <div class="font-bold text-sm text-slate-900">Maria C.</div>
+                            <div class="text-xs text-slate-500">Loja de Roupas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-amber-400 mb-4 flex gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">"Só de usar o rateio de despesas fixas eu vi onde meu dinheiro tava sumindo. Vale cada centavo."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">CJ</div>
+                        <div class="ml-3">
+                            <div class="font-bold text-sm text-slate-900">Carlos J.</div>
+                            <div class="text-xs text-slate-500">Hamburgueria</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-amber-400 mb-4 flex gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">"Eu morria de medo de planilha. O LTG é muito simples, parece mágica."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">AP</div>
+                        <div class="ml-3">
+                            <div class="font-bold text-sm text-slate-900">Ana P.</div>
+                            <div class="text-xs text-slate-500">Artesanato</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7: PREÇOS (O CAMINHO) - RESTAURADA -->
+    <section id="oferta" class="py-24 px-6 bg-slate-100">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-slate-900">TENHA O CONTROLE POR MENOS DE UM X-SALADA</h2>
+            <p class="text-center text-slate-600 mb-16">Acesso direto no seu e-mail imediatamente após a compra.</p>
+
+            <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-5xl mx-auto">
+                
+                <!-- Opção Completa -->
+                <div class="bg-white rounded-3xl shadow-[0_0_40px_rgba(16,185,129,0.3)] border-4 border-emerald-500 p-8 flex-1 flex flex-col relative transform md:-translate-y-4 z-10 scale-105">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-emerald-600 to-green-500 text-white px-8 py-2 rounded-full text-sm font-bold shadow-lg whitespace-nowrap animate-pulse">
+                        🚀 SISTEMA DE GESTÃO COMPLETO
+                    </div>
+
+                    <h3 class="text-2xl font-black text-emerald-700 text-center mb-2 mt-4">PLANO COMPLETO</h3>
+                    <div class="text-center text-sm text-slate-500 font-medium mb-6">Para quem vai construir um império</div>
+                    
+                    <div class="text-center mb-8 pb-8 border-b border-slate-100">
+                        <span class="text-sm text-red-400 line-through font-bold">De R$ 197,00</span>
+                        <div class="flex justify-center items-end text-slate-900 gap-1">
+                            <span class="text-2xl font-bold mb-2">R$</span>
+                            <span class="text-6xl font-black tracking-tighter">37</span>
+                            <span class="text-2xl font-bold mb-2">,00</span>
+                        </div>
+                        <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded mt-2">
+                            <i class="fab fa-windows"></i> Licença Vitalícia Windows
+                        </span>
+                    </div>
+
+                    <ul class="space-y-6 mb-8 flex-1 text-left">
+                        <li class="flex items-start gap-3">
+                             <i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-500 mt-1"></i>
+                             <div>
+                                 <strong class="block text-slate-900 font-bold text-lg">Sistema LTG Completo</strong>
+                                 <p class="text-sm text-slate-600">A ferramenta definitiva instalada no seu Windows.</p>
+                             </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                             <i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-500 mt-1"></i>
+                             <div>
+                                 <strong class="block text-slate-900 font-bold">Módulo de Precificação</strong>
+                                 <p class="text-sm text-slate-600">O fim do "chutômetro". Saiba exatamente quanto cobrar para ter lucro real no bolso.</p>
+                             </div>
+                        </li>
+
+                        <!-- Bônus Lista -->
+                        <li class="bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                             <div class="flex items-center mb-1 gap-2">
+                                <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Bônus 1</span>
+                                <strong class="text-emerald-800 font-bold">Controle de Estoque</strong>
+                             </div>
+                             <p class="text-sm text-emerald-700 leading-tight">Nunca mais perca vendas por falta de produto. O sistema avisa quando e quanto comprar.</p>
+                        </li>
+                        <li class="bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                             <div class="flex items-center mb-1 gap-2">
+                                <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Bônus 2</span>
+                                <strong class="text-emerald-800 font-bold">Controle Financeiro</strong>
+                             </div>
+                             <p class="text-sm text-emerald-700 leading-tight">Um raio-x do seu dinheiro. Veja gráficos de lucro e saiba exatamente para onde vai cada centavo.</p>
+                        </li>
+                        <li class="bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                             <div class="flex items-center mb-1 gap-2">
+                                <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Bônus 3</span>
+                                <strong class="text-emerald-800 font-bold">Controle de Vendas</strong>
+                             </div>
+                             <p class="text-sm text-emerald-700 leading-tight">Descubra os campeões de venda e os produtos que dão prejuízo. Foque no que coloca dinheiro no bolso.</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="block w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-5 rounded-xl text-center transition shadow-xl text-xl hover:scale-105 transform duration-300 animate-pulse-urgency">
+                        QUERO O SISTEMA COMPLETO
+                    </a>
+                    <div class="flex items-center justify-center mt-4 space-x-2 text-xs text-slate-400 font-medium">
+                        <span class="flex items-center gap-1"><i data-lucide="lock" class="w-3 h-3"></i> Compra Segura</span>
+                        <span>•</span>
+                        <span class="flex items-center gap-1"><i data-lucide="zap" class="w-3 h-3"></i> Acesso Imediato</span>
+                    </div>
+                </div>
+
+                <!-- Opção Básica -->
+                <div class="bg-slate-50 rounded-3xl border border-slate-200 p-8 flex-1 flex flex-col relative md:scale-90 opacity-90 hover:opacity-100 transition">
+                    <h3 class="text-xl font-bold text-slate-600 text-center mb-2 uppercase tracking-wide">PLANO BÁSICO</h3>
+                    <div class="text-center text-sm text-slate-400 mb-6">Foco total na formação de preço.</div>
+                    
+                    <div class="text-center mb-8 pb-8 border-b border-slate-200 grayscale opacity-80">
+                        <div class="flex justify-center items-end text-slate-800 gap-1">
+                            <span class="text-xl font-bold mb-2">R$</span>
+                            <span class="text-4xl font-black">10</span>
+                            <span class="text-xl font-bold mb-2">,00</span>
+                        </div>
+                        <span class="block text-xs text-slate-400 mt-1">Pagamento único</span>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start text-sm gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-slate-500 mt-0.5"></i>
+                            <div>
+                                <strong class="block text-slate-700">Módulo de Precificação Completo</strong>
+                                <span class="text-xs text-slate-500">Cálculo exato de custos, impostos e margem de lucro real.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="block w-full bg-slate-200 hover:bg-slate-300 text-slate-600 font-bold py-4 rounded-xl text-center transition text-sm border border-slate-300">
+                        QUERO SÓ O BÁSICO
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8: GARANTIA -->
+    <section class="py-16 px-6 bg-white border-t border-slate-100">
+        <div class="container mx-auto max-w-3xl text-center">
+            <div class="inline-flex justify-center mb-8 relative">
+                <div class="w-24 h-24 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600">
+                    <i data-lucide="shield-check" class="w-12 h-12"></i>
+                </div>
+            </div>
+            <h2 class="text-2xl font-black text-slate-900 mb-4">RISCO ZERO: 7 DIAS DE GARANTIA BLINDADA</h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                Baixe, instale e teste. Coloque seus produtos.<br>
+                Se em 5 minutos o <strong>Sistema LTG</strong> não te der a clareza que você precisa, ou se você achar difícil de usar, nós devolvemos 100% do seu dinheiro. Sem letras miúdas. É preto no branco.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 9: URGÊNCIA FINAL -->
+    <section class="py-24 px-6 bg-slate-950 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        
+        <div class="container mx-auto max-w-4xl relative z-10">
+            <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight">
+                NÃO PERCA MAIS ESSA OPORTUNIDADE DE <span class="text-emerald-400">DORMIR TRANQUILO</span>
+            </h2>
+            <p class="text-xl text-slate-300 mb-10">
+                As noites sem sono e a dúvida se você está "trabalhando de graça" precisam ficar no passado. Quanto custa continuar no escuro? Muito mais do que R$ 37,00.
+            </p>
+            <a href="#oferta" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white text-2xl font-bold py-5 px-10 rounded-xl shadow-2xl transform transition hover:-translate-y-1 animate-pulse-urgency">
+                QUERO MINHA LIBERDADE FINANCEIRA AGORA
+            </a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 10: FAQ -->
+    <section class="py-16 px-6 bg-slate-50">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">PERGUNTAS FREQUENTES</h2>
+            
+            <div class="space-y-4">
+                <!-- Item FAQ -->
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <summary class="p-5 flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                        <span>Preciso pagar mensalidade?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 text-sm border-t border-slate-100 pt-4">
+                        Não! O pagamento é único. O sistema é seu para sempre. Não cobramos mensalidade, anuidade ou taxas escondidas.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <summary class="p-5 flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                        <span>Funciona sem internet?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 text-sm border-t border-slate-100 pt-4">
+                        Sim! Após instalado, você não precisa de internet para usar no dia a dia. Seus dados ficam seguros no seu computador, garantindo total privacidade.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <summary class="p-5 flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                        <span>Tenho muitos produtos, serve pra mim?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 text-sm border-t border-slate-100 pt-4">
+                        Com certeza. O cadastro é ilimitado, seja para 10 ou 10.000 itens. O sistema foi projetado para aguentar o tranco.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <summary class="p-5 flex justify-between items-center font-bold text-slate-800 cursor-pointer list-none">
+                        <span>E se eu não gostar?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 text-sm border-t border-slate-100 pt-4">
+                        Você tem 7 dias de garantia incondicional. Basta enviar um e-mail e devolvemos 100% do seu dinheiro. Sem perguntas.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 11: FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 py-12 px-6 text-sm border-t border-slate-900">
+        <div class="container mx-auto max-w-5xl text-center">
+            <div class="mb-8">
+                <h4 class="text-white font-bold text-lg mb-4">QUEM CRIOU O SISTEMA LTG?</h4>
+                <p class="max-w-2xl mx-auto leading-relaxed">
+                    O Sistema LTG nasceu da necessidade real de ver pequenos empreendedores quebrarem não por falta de vendas, mas por falta de clareza. Somos especialistas em transformar a complexidade da gestão em ferramentas simples, automáticas e acessíveis.
+                </p>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-white transition">Termos de Uso</a>
+                <a href="#" class="hover:text-white transition">Políticas de Privacidade</a>
+                <a href="#" class="hover:text-white transition">Contato</a>
+            </div>
+            <p>Copyright © 2025 Sistema LTG. Todos os direitos reservados.</p>
+            <p class="mt-2 text-xs opacity-50">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
+        </div>
+    </footer>
+
+    <!-- Init Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
