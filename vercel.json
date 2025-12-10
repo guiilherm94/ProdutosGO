@@ -1,9 +1,6 @@
 {
+  "buildCommand": "bash build.sh",
   "rewrites": [
-    {
-      "source": "/sistema-ltg",
-      "destination": "/sistema-ltg.html"
-    },
     {
       "source": "/:path((?!.*\\.).*)",
       "destination": "/:path.html"
